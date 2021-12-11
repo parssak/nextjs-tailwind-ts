@@ -1,8 +1,8 @@
 import Head from 'next/head'
 import { AppProps } from 'next/app'
-import '../styles/index.css'
-import Nav from '../components/layout/Nav'
-import Footer from '../components/layout/Footer'
+import 'styles/index.css'
+import Footer from 'components/layout/Footer'
+import Nav from 'components/layout/Nav'
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
