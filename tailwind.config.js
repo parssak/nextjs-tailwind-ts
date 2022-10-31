@@ -4,6 +4,9 @@ module.exports = {
     "./src/pages/**/*.{ts,tsx,js,jsx}",
   ],
   theme: {
+    fontFamily: {
+      sans: ["Inter", "sans-serif"],
+    },
     container: {
       padding: {
         DEFAULT: "1rem",
