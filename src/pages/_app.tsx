@@ -1,7 +1,7 @@
 import Head from "next/head";
 import { AppProps } from "next/app";
-import "styles/index.css";
 import { ThemeProvider, UniversalUIConfigProvider } from "@parssa/universal-ui";
+import "styles/index.css";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
@@ -11,10 +11,10 @@ function MyApp({ Component, pageProps }: AppProps) {
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <meta name="color-scheme" content="light dark" />
       </Head>
-      <UniversalUIConfigProvider config={{ components: {}, ssr: true }}>
-        <ThemeProvider className="min-h-screen bg-theme-pure">
+      <UniversalUIConfigProvider config={{ components: {} }}>
+        <div className="min-h-screen bg-theme-pure">
           <Component {...pageProps} />
-        </ThemeProvider>
+        </div>
       </UniversalUIConfigProvider>
     </>
   );

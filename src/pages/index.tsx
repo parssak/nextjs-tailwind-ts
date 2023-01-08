@@ -6,14 +6,14 @@ export default function Page() {
       <Text variant="h1">A Next 13 App with TailwindCSS 3.2</Text>
       <Text className="mt-size-4y">
         Also, pre-configured with{" "}
-        <Text as="a" href={"https://universal-ui.vercel.app/"} variant="code" className="font-mono">
+        <Text as="a" href={"https://universal-ui.vercel.app/"} variant="code" className="font-mono" size='sm'>
           @parssa/universal-ui
         </Text>
         <Button
           target={"_blank"}
           as="a"
           href={"https://universal-ui.vercel.app/"}
-          className="mt-4 group flex w-max"
+          className="mt-size-4y group flex w-max"
           trailingIcon={
             <svg
               className="w-full h-full group-hover:translate-x-1 transition-transform"
